@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2>Data table</h2>
+
+        <div id="pagination-limit">
+            Show
+            <select>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            Entries
+        </div>
+
+        <table id="table">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+        
+        <div id="entries"></div>
+        <div id="pagination"></div>
+    </div>
+</body>
+
+<script src="./index.js"></script>
+
+</html>

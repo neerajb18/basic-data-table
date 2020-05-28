@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#pagination-limit {
+  display: none;
+  padding: 10px 0px;
+}
+
+#table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+#table th,
+#table td {
+  text-align: left;
+  padding: 12px;
+}
+
+thead th.sortable {
+  cursor: pointer;
+}
+
+thead tr.sticky th {
+  background-color: white;
+  position: sticky;
+  top: -1px;
+}
+
+thead .sort_asc {
+  background-image: url(./images/sort_asc.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+thead .sort_desc {
+  background-image: url(./images/sort_desc.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+thead input {
+  padding: 12px 20px 12px 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+#table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#table td,
+#table th {
+  width: 20%;
+}
+
+#table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#entries {
+  text-align: center;
+  padding: 20px;
+}
+
+#pagination {
+  padding: 0px 20px 20px 20px;
+  float: right;
+}
+
+#pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#pagination a.selected {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+  #app {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #app {
+    width: 100%;
+  }
+}
